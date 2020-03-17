@@ -7,4 +7,4 @@ The names of people in our class are:
 - Aine O'Toole
 - Zachary Wallpe
 - Lauren Sandberg
-
+-Max Loughan
