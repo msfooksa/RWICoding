@@ -8,3 +8,4 @@ The names of people in our class are:
 - Zachary Wallpe
 - Lauren Sandberg
 - Max Loughan
+- Grady Boger
