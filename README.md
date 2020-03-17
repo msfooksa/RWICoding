@@ -9,3 +9,4 @@ The names of people in our class are:
 - Lauren Sandberg
 - Max Loughan
 - Grady Boger
+- Jack Loughan
