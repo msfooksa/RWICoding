@@ -10,3 +10,4 @@ The names of people in our class are:
 - Max Loughan
 - Grady Boger
 - Jack Loughan
+- Benjamin Smith
