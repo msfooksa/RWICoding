@@ -6,4 +6,5 @@ The names of people in our class are:
 - Jackson Simon 
 - Aine O'Toole
 - Zachary Wallpe
+- Lauren Sandberg
 
