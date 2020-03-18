@@ -1,2 +1,9 @@
 Names: Jackson, Jack, Grady, Luke
 dice game
+#imports random
+from random import randint
+#gives instructions on how to play the game
+print('In this game, you will guess the sum of three die, Good Luck!\n')
+#default values for roll
+roll = [0,0,0]
+#Comment
