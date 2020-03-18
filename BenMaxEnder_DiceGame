@@ -1,41 +1,33 @@
-#dice game:
-
-
-print("Welcome to the Dice Game! In this game, a random \"roll of the dice\""
-     "will generate a number between 1 and 6. Then it will roll 2 more times," 
-      "and the roll numbers taken from each of the die will be added together."
-      "YOUR job, for the sake of entertainment, is to GUESS the sum of these three values."
-      "REMEMBER: If you win, You will recieve 100 schrutebucks!!!!")
-
-#asking the user to guess the roll of the dice,
-#and defining the guess to be used later
-guess = input("What number do you think will be the sum of the three rolls? :")
-
 import random
-#imports the random module
+random.randint (1,6)
 
-roll_1 = random.randint(0,6)
-#showing the result of the "roll"
-print("Roll 1:")
-print (roll_1)
+die1= random.randint (1,6)
+die2= random.randint (1,6)
+die3= random.randint (1,6)
+final_number = die1 + die2 + die3
 
-roll_2 = random.randint(0,6)
-#showing the result of the "roll"
-print("Roll 2:")
-print (roll_2)
 
-roll_3 = random.randint(0,6)
-#showing the result of the "roll"
-print("Roll 3:")
-print (roll_2)
+a=int(input("How many rounds would you like to play?: "))
+for i in range (a):
+    w=int(input("How many players are playing this round?: "))
+    print("There are three die with the numbers 1-6 on each one. Pick a number between 1 and 18 and if you guess the same number as the sum of all three dice than you win")
+    names_and_guesses={}
+    for i in range (w):
+        name=input("What is your name?: ")
+        guess=int(input("What is your guess?: "))
+        (names_and_guesses[name])=guess
+    die1= random.randint (1,6)
+    die2= random.randint (1,6)
+    die3= random.randint (1,6)
+    final_number = die1 + die2 + die3
+    print(names_and_guesses)
+    print("The sum of the dice is " + str(final_number))
+    if final_number in names_and_guesses.values():
+        for i in names_and_guesses.keys():
+            if final_number == names_and_guesses[i]:
+                print("You guessed correct!")
+            else:
+                print("You guessed wrong")
 
-total = roll_1 + roll_2 + roll_3
-#summing the rolls
-print(('The sum of the rolls is ') + str(total))
 
-#ending the script
-if total == guess :
-    print("Holy shit! You got it! Nice. I have no schrutbucks. ")
-else :
-    print("sorry, but " +(guess) + " was wrong. Better luck next time") 
 
