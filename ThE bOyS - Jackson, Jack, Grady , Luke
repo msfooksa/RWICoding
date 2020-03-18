@@ -1,24 +1,9 @@
 Names: Jackson, Jack, Grady, Luke
 dice game
-#comments are dumb - luke janssen circa 2020
 #imports random
 from random import randint
 #gives instructions on how to play the game
 print('In this game, you will guess the sum of three die, Good Luck!\n')
 #default values for roll
 roll = [0,0,0]
-#for loop roll random int for each die
-for i in range(3):
-    roll[i] = randint(1,6)
-#prints each individual roll
-print('You rolled: %s' % (roll))
-#user input for guess as to the sum of the three rolls
-guess = int(input('Gimme your guess '))
-#finds sum of the three rolls
-sum = roll[0] + roll[1] + roll[2]
-#compares guess to the summ of the three die 
-if guess == sum:
-    print('\nCongrats, you got it!')
-else:
-    #prints loser because you are a loser
-    print('loser')
+#Comment
