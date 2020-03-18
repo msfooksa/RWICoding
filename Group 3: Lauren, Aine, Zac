@@ -22,7 +22,7 @@ for i in range(0, rounds):
 	num_sum = die1 + die2 + die3
 	guess = int(input("Enter your guess: "))
 	if guess == num_sum:
-		print("Congradulations, you guessed right")
+		print("Congratulations, you guessed right")
 	else:
 		print("Sorry, try again"+" The number was " + str(num_sum))
 
