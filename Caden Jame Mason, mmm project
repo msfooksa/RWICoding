@@ -1,4 +1,3 @@
-
 ay = 'ay'
 way = 'way'
 consonant = ('B','C','D','F','G','H','J','K','L','M','N','P','Q','R','S','T','Y','V','X','Z')
@@ -25,5 +24,4 @@ for user_word in words:
     else:
         print('?')
 
-print(pig_latin_string)
-
+print("Your Senternce In Pig Latin Is:" + pig_latin_string)
