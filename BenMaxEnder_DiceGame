@@ -28,4 +28,9 @@ for i in range (a):
                 print("You guessed correct! Those are some slim odds Bucko!")
             else:
                 print("You guessed wrong. Better luck next time.")
-
+                
+# michaela's feedback:
+# 1. please comment your code in the format we've discussed in class
+# 2. you only print the "you guessed wrong" line if someone guessed correctly - this should be printed regardless
+# 3. print who guessed correct - rather than saying "you guessed correct" if any one of the players guessed correctly, it should read, say, "max guessed correct"
+# 4. all players are playing all rounds. declare an overall winner based on who guessed correctly the most number of times
