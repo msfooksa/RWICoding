@@ -1,3 +1,4 @@
+# Dice Game Level 1 
 from random import randint
 def roll():
 	global die1
@@ -8,7 +9,7 @@ def roll():
 	die3 = randint(1,6)
 
 print("You will try to guess the sum of three dice.")
-rounds = int(input("Enter the number of times you want to guess (you may guess up to 5 times): ")) 
+rounds = int(input("Enter the number of times you want to guess: ")) 
 for i in range(0, rounds):
 	roll()
 	num_sum = die1 + die2 + die3
