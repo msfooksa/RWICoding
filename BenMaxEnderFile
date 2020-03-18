@@ -1,0 +1,183 @@
+from tkinter import *
+import tkinter.messagebox
+import random
+
+tk = Tk()
+
+rnd = 0
+
+tk.title("Tic Tac Toe")
+
+bclick1 = True
+bclick2 = True
+bclick3 = True
+bclick4 = True
+bclick5 = True
+bclick6 = True
+
+#Sets the size
+tk.geometry("1500x1000+500+500")
+
+def btnClick1(buttons):
+
+    global bclick1
+
+
+    if 1 <= int(buttons["text"]) <= 6 and bclick1 == True:
+
+        buttons["text"] = dice1
+        bclick1 = False
+    else:
+
+        tkinter.messagebox.showinfo("Tic-Tac-Toe", "Button already Clicked!")
+
+def btnClick2(buttons):
+
+    global bclick2
+
+    if 1 <= int(buttons["text"]) <= 6 and bclick2 == True:
+        buttons["text"] = dice2
+        bclick2 = False
+    else:
+        tkinter.messagebox.showinfo("Tic-Tac-Toe", "Button already Clicked!")
+
+
+def btnClick3(buttons):
+
+
+    global bclick3
+
+
+    if 1 <= int(buttons["text"]) <= 6 and bclick3 == True:
+
+        buttons["text"] = dice3
+        bclick3 = False
+    else:
+
+        tkinter.messagebox.showinfo("Tic-Tac-Toe", "Button already Clicked!")
+
+def btnClick4(buttons):
+
+
+    global bclick4
+
+
+    if 1 <= int(buttons["text"]) <= 6 and bclick4 == True:
+
+        buttons["text"] = dice4
+        bclick4 = False
+    else:
+
+        tkinter.messagebox.showinfo("Tic-Tac-Toe", "Button already Clicked!")
+
+def btnClick5(buttons):
+
+
+    global bclick5
+
+    if 1 <= int(buttons["text"]) <= 6 and bclick5 == True:
+
+        buttons["text"] = dice5
+        bclick5 = False
+    else:
+
+        tkinter.messagebox.showinfo("Tic-Tac-Toe", "Button already Clicked!")
+
+
+def btnClick6(buttons):
+
+
+    global bclick6
+
+
+    if 1 <= int(buttons["text"]) <= 6 and bclick6 == True:
+
+        buttons["text"] = dice6
+        bclick6 = False
+    else:
+        tkinter.messagebox.showinfo("Tic-Tac-Toe", "Button already Clicked!")
+
+def rllClick(buttons):
+    global rnd
+
+    rnd += 1
+
+
+def round():
+    
+    if bclick1 == True:
+        dice1 = random.randint(1,6)
+    else:
+        tkinter.messagebox.showinfo("Tic-Tac-Toe", "Dice1 saved")
+    if bclick2 == True:
+        dice2 = random.randint(1,6)
+    else:
+        tkinter.messagebox.showinfo("Tic-Tac-Toe", "Dice2 saved")
+    if bclick3 == True:
+        dice3 = random.randint(1,6)
+    else:
+        tkinter.messagebox.showinfo("Tic-Tac-Toe", "Dice3 saved")
+    if bclick4 == True:
+        dice4 = random.randint(1,6)
+    else:
+        tkinter.messagebox.showinfo("Tic-Tac-Toe", "Dice4 saved")
+    if bclick5 == True:
+        dice5 = random.randint(1,6)
+    else:
+        tkinter.messagebox.showinfo("Tic-Tac-Toe", "Dice5 saved")
+    if bclick6 == True:
+        dice6 = random.randint(1,6)
+    else:
+        tkinter.messagebox.showinfo("Tic-Tac-Toe", "Dice6 saved")
+
+
+    button1 = Button(tk, text=str(dice1), font='Times 20 bold', bg='gray', fg='black', height=12, width=50, command=lambda: btnClick1(button1))
+    button1.grid(row=3, column=0)
+
+    button2 = Button(tk, text=str(dice2), font='Times 20 bold', bg='gray', fg='black', height=12, width=50, command=lambda: btnClick2(button2))
+    button2.grid(row=3, column=1)
+
+    button3 = Button(tk, text=str(dice3), font='Times 20 bold', bg='gray', fg='black', height=12, width=50, command=lambda: btnClick3(button3))
+    button3.grid(row=3, column=2)
+
+    button4 = Button(tk, text=str(dice4), font='Times 20 bold', bg='gray', fg='black', height=12, width=50, command=lambda: btnClick4(button4))
+    button4.grid(row=4, column=0)
+
+    button5 = Button(tk, text=str(dice5), font='Times 20 bold', bg='gray', fg='black', height=12, width=50, command=lambda: btnClick5(button5))
+    button5.grid(row=4, column=1)
+
+    button6 = Button(tk, text=str(dice6), font='Times 20 bold', bg='gray', fg='black', height=12, width=50, command=lambda: btnClick6(button6))
+    button6.grid(row=4, column=2)
+
+    reroll = Button(tk, text="Reroll", font='Times 20 bold', bg='gray', fg='black', height=12, width=50, comand=lambda: rllClick(reroll))
+    rerrol.grid(row=5, column=0)
+
+if rnd == 0:
+    round()
+else:
+    if rnd == 1:
+        round()
+    else:
+        if rnd == 2:
+            round()
+        else:
+            if rnd == 3:
+                round()
+            else:
+                if rnd == 4:
+                    round()
+                else:
+                    if rnd == 5:
+                        round()
+                    else:
+                        if rnd == 6:
+                            round()
+                        else:
+                            stkinter.messagebox.showinfo("Tic-Tac-Toe", "Game Over!")
+    
+
+
+
+tk.mainloop()
+
+
