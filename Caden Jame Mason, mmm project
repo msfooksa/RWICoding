@@ -22,6 +22,6 @@ for user_word in words:
         pig_latin=user_word+way
         pig_latin_string=pig_latin_string+' '+pig_latin
     else:
-        print('?')
+        print('Looks like your first letter is not a Letter, This translater only accepts alphabetical Characters')
 
 print("Your Senternce In Pig Latin Is:" + pig_latin_string)
