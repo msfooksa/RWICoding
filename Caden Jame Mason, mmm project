@@ -1,6 +1,9 @@
 ay = 'ay'
+# Prepares ending for words that begin with vowels
 way = 'way'
+# defines consonants 
 consonant = ('B','C','D','F','G','H','J','K','L','M','N','P','Q','R','S','T','Y','V','X','Z')
+# defines vowels
 vowel = ('A','E','I','O','U')
 pig_latin_string =''
 user_sentence = input('Enter a sentence to translate to Pig Latin: ')
