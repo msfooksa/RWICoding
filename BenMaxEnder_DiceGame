@@ -1,29 +1,2 @@
-import random
-random.randint (1,6)
-
-die1= random.randint (1,6)
-die2= random.randint (1,6)
-die3= random.randint (1,6)
-final_number = die1 + die2 + die3
-w=int(input("How many players are playing this round?: "))
-a=int(input("How many rounds would you like to play?: "))
-
-
-for i in range (a):
-    print("There are three die with the numbers 1-6 on each one. Pick a number between 1 and 18 and if you guess the same number as the sum of all three dice than you win")
-    names_and_guesses={}
-    for i in range (w):
-        name=input("What is your name?: ")
-        guess=int(input("What is your guess?: "))
-        (names_and_guesses[name])=guess
-        print(names_and_guesses)
-        print("The sum of the dice is " + str(final_number))
-        if final_number in names_and_guesses.values():
-            for i in names_and_guesses.keys():
-                if final_number == names_and_guesses[i]:
-                    print("You guessed correct!")
-                else:
-                    print("You guessed wrong")
-
 
 
