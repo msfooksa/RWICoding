@@ -1,4 +1,12 @@
-Level 1 Dice Game
+
+#Level 1 Dice Game
 print("You will try to guess the sum of three dice.")
 rounds = input("Enter the number of times you want to guess (you may guess up to 5 times): ")
 guess = input("Enter your guess: ") 
+
+
+die_sum = (die1 + die2 + die3)
+if guess == die_sum:
+  print("Congradulations, you guessed right")
+else:
+  print("Sorry, try again. The number was " + str(die_sum))
