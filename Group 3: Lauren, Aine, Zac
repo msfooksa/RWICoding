@@ -9,7 +9,7 @@ def roll():
 	die3 = randint(1,6)
 
 print("You will try to guess the sum of three dice.")
-rounds = int(input("Enter the number of times you want to guess: ")) 
+rounds = int(input("Enter the number of rounds you want to play: ")) 
 for i in range(0, rounds):
 	roll()
 	num_sum = die1 + die2 + die3
@@ -17,7 +17,7 @@ for i in range(0, rounds):
 	if guess == num_sum:
 		print("Congratulations, you guessed right")
 	else:
-		print("Sorry, try again. The number was %s" %(num_sum))
+		print("Sorry, try again. The number was %s." %(num_sum))
 
 
 
