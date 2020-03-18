@@ -16,3 +16,8 @@ guess = int(input('Gimme your guess '))
 #finds sum of the three rolls
 sum = roll[0] + roll[1] + roll[2]
 #compares guess to the summ of the three die
+if guess == sum:
+   print('\nCongrats, you got it!')
+else:
+   #prints loser because you are a loser
+   print('loser')
