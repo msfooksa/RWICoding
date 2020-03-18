@@ -21,3 +21,7 @@ for i in range(0, rounds):
 
 
 
+# michaela's feedback
+# 1. comment your code in the format we've discussed in class
+# 2. the final output should be how many times the person guessed correctly
+# 3. the next step is to make it multiplayer!
