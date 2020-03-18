@@ -6,4 +6,8 @@ from random import randint
 print('In this game, you will guess the sum of three die, Good Luck!\n')
 #default values for roll
 roll = [0,0,0]
-#Comment
+#for loop rolls random int for each individual dice value
+for i in range(3):
+    roll[i] = randint(1,6)
+#prints out each roll
+print('You rolled: %s' % (roll))
