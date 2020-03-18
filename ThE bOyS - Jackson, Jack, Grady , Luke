@@ -21,3 +21,9 @@ if guess == sum:
 else:
    #prints loser because you are a loser
    print('loser')
+
+# michaela's feedback
+# 1. comment out the first two lines
+# 2. right now, you print the three dice rolls before asking the player for their guess - it is more of an addition test than trying to guess the sum of the dice. (try running your code to see what i mean)
+# instead, don't print out the individual dice rolls. you can ask the player for their guess, print out the actual sum, and tell them whether they are right or wrong
+# 3. try making it a multiplayer game
