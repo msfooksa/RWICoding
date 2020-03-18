@@ -11,3 +11,4 @@ The names of people in our class are:
 - Grady Boger
 - Jack Loughan
 - Benjamin Smith
+- Mason Haskell
