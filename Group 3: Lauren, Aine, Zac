@@ -13,3 +13,9 @@ print("You will try to guess the sum of three dice.")
 rounds = input("Enter the number of times you want to guess (you may guess up to 5 times): ")
 guess = input("Enter your guess: ") 
 #master
+
+num_sum = die1 + die2 + die3
+if guess == num_sum:
+    print("Congradulations, you guessed right")
+else:
+    print("Sorry, try again"+" The number was " + str(num_sum))
