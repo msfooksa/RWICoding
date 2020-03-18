@@ -13,8 +13,22 @@ def roll():
 	global die3
 	die3 = randint(1,6)
 
+
+Level 1 Dice Game
+print("You will try to guess the sum of three dice.")
+rounds = input("Enter the number of times you want to guess (you may guess up to 5 times): ") 
+for i in range(0, rounds):
+	roll()
+	num_sum = die1 + die2 + die3
+	guess = int(input("Enter your guess: "))
+	if guess == num_sum:
+		print("Congradulations, you guessed right")
+	else:
+		print("Sorry, try again"+" The number was " + str(num_sum))
+
 num_sum = die1 + die2 + die3
 if guess == num_sum:
     print("Congradulations, you guessed right")
 else:
     print("Sorry, try again"+" The number was " + str(num_sum))
+
