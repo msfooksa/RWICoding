@@ -1,1 +1,8 @@
-
+from random import randint
+def roll():
+	global die1
+	die1 = randint(1,6)
+	global die2
+	die2 = randint(1,6)
+	global die3
+	die3 = randint(1,6)
