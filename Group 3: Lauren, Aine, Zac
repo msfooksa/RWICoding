@@ -10,22 +10,38 @@ def roll():
 	global die3
 	die3 = randint(1,6)
 #added this as per request
-correct-guesses = 0
+correct-guesses-1 = 0
+correct-guesses-2 = 0
+correct-guesses-3 = 0
+correct-guesses-4 = 0
 print("You will try to guess the sum of three dice.")
+players = int(input("Enter the amount of people playing. Minimum of one, maximum of four."))
 #for loop for rounds
 rounds = int(input("Enter the number of rounds you want to play: ")) 
-for i in range(0, rounds):
-	roll()
-	num_sum = die1 + die2 + die3
-	guess = int(input("Enter your guess: "))
-	#checks answer
-	if guess == num_sum:
-		print("Congratulations, you guessed right")
-		correct-guesses = correct-guesses + 1
-	else:
-		print("Sorry, try again. The number was %s." %(num_sum))
+for j in range(0, rounds):
+	#This allows for i to be equal to whichever player's turn, aka it starts at one rather than zero
+	for i in range(1,players + 1):
+		print("Player %s\'s turn!" %(i)
+		roll()
+		num_sum = die1 + die2 + die3
+		guess = int(input("Enter your guess: "))
+		#checks answer
+		if guess == num_sum and i == 1:
+			print("Congratulations, you guessed right")
+			correct-guesses-1 = correct-guesses-1 + 1
+		elif guess == num_sum and i == 2:
+			print("Congratulations, you guessed right")
+			correct-guesses-2 = correct-guesses-2 + 1
+		elif guess == num_sum and i == 3:
+			print("Congratulations, you guessed right")
+			correct-guesses-3 = correct-guesses-3 + 1
+		elif guess == num_sum and i == 4:
+			print("Congratulations, you guessed right")
+			correct-guesses-4 = correct-guesses-4 + 1
+		else:
+			print("Sorry, try again. The number was %s." %(num_sum))
 #edited in as per request
-print("The number of guesses you got correct was %s." %(correct-guesses))
+print("Player 1 got %s points, player 2 got %s points, player 3 got %s points, and player 4 got %s points" %(correct-guesses-1, correct-guesses-2, correct-guesses-3, correct-guesses-4))
 
 
 # michaela's feedback
