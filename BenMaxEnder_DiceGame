@@ -16,7 +16,7 @@ for i in range(w):
 for i in Name.keys():
     points[i] = 0
     for x in range (a):
-        Name[i] = input("Guess the sum of three randomly rolled dice:")
+        Name[i] = input( i + " Guess the sum of three randomly rolled dice:")
 #Sets dice values for the round
         die1= random.randint (1,6)
         die2= random.randint (1,6)
@@ -30,6 +30,16 @@ for i in Name.keys():
             points[i] += 0
   
 #Calculates the winner and prints it out
+
+winner = max(points.items())
+if int(winner[1]) > 0:
+    print("The winner is " + str(winner))
+else:
+    print("No one won")
+print(points)
+
+
+=======
 winner = max(Name.items())
 
 print("The winner is " + str(winner))
@@ -84,3 +94,4 @@ for i in range (a):
 # 2. you only print the "you guessed wrong" line if someone guessed correctly - this should be printed regardless
 # 3. print who guessed correct - rather than saying "you guessed correct" if any one of the players guessed correctly, it should read, say, "max guessed correct"
 # 4. all players are playing all rounds. declare an overall winner based on who guessed correctly the most number of times
+
