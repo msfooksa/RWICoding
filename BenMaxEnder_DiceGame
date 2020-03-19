@@ -5,29 +5,33 @@ import random
 #Sets lists and variables
 w=int(input("How many players are playing this round?: "))
 a=int(input("How many rounds would you like to play?: "))
-print("There are three die with the numbers 1-6 on each one. Pick a number between 1 and 18 and if you guess the same number as the sum of all three dice than you win")
-names_and_guesses={}
+Name={}
+points = {}
+
+#Sets the variables in the list
+for i in range(w):
+    Name[input("Enter your name:")] = input("Guess the sum of three randomly rolled dice:")
 
 
 #Creates the For loops
-for i in range (a):
-    for i in range (w):
+for i in Name.keys():
+    points[i] = 0
+    for x in range (a):
     
+#Sets dice values for the round
         die1= random.randint (1,6)
         die2= random.randint (1,6)
         die3= random.randint (1,6)
         final_number = die1 + die2 + die3
-        name=input("What is your name?: ")
-        guess=int(input("What is your guess?: "))
-        (names_and_guesses[name])=guess
-        print(names_and_guesses)
         print("The sum of the dice is " + str(final_number))
-        if final_number in names_and_guesses.values():
-            for i in names_and_guesses.keys():
-                if final_number == names_and_guesses[i]:
-                    print("You guessed correct!")
-                else:
-                    print("You guessed wrong")
-
-
+#Checks to see if you got it right
+        if int(Name[i]) == final_number:
+            points[i] += 1
+        else:
+            points[i] += 0
+  
+#Calculates the winner and prints it out
+winner = max(Name.items(),operator.itemgetter(1))[0]
+print("The winner is " + winner )
+print(points)
 
