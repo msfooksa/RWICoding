@@ -1,5 +1,5 @@
-Names: Jackson, Jack, Grady, Luke
-dice game
+#Names: Jackson, Jack, Grady, Luke
+#dice game
 #imports random
 from random import randint
 #gives instructions on how to play the game
