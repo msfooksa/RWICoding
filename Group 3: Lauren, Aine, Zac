@@ -1,4 +1,37 @@
-Level 1 Dice Game
+# Dice Game Level 1 
+# imports a random integer 
+from random import randint
+#Core game function
+def roll():
+	#global allows the variables inside of this function to act as global variables, making my job much easier
+	global die1
+	die1 = randint(1,6)
+	global die2
+	die2 = randint(1,6)
+	global die3
+	die3 = randint(1,6)
+#added this as per request
+correct-guesses = 0 
+# explains the game to the user and asks for the number of players. 
 print("You will try to guess the sum of three dice.")
-rounds = input("Enter the number of times you want to guess (you may guess up to 5 times): ")
-guess = input("Enter your guess: ") 
+players = input("Enter the number of players:")
+#for loop for rounds
+rounds = int(input("Enter the number of rounds you want to play: ")) 
+for i in range(0, rounds):
+	roll()
+	num_sum = die1 + die2 + die3
+	guess = int(input("Enter your guess: "))
+	#checks answer
+	if guess == num_sum:
+		print("Congratulations, you guessed right")
+		correct-guesses = correct-guesses + 1
+	else:
+		print("Sorry, try again. The number was %s." %(num_sum))
+# prints the number of correct guesses (edited in as per request) 
+print("The number of guesses you got correct was %s." %(correct-guesses))
+
+
+# michaela's feedback
+# 1. comment your code in the format we've discussed in class (Done)
+# 2. the final output should be how many times the person guessed correctly (Done)
+# 3. the next step is to make it multiplayer!
