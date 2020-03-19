@@ -24,7 +24,7 @@ for i in range(0, rounds):
 		correct-guesses = correct-guesses + 1
 	else:
 		print("Sorry, try again. The number was %s." %(num_sum))
-#edited in as per request
+# prints the number of correct guesses (edited in as per request) 
 print("The number of guesses you got correct was %s." %(correct-guesses))
 
 
