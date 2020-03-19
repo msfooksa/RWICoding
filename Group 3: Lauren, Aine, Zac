@@ -12,6 +12,7 @@ def roll():
 #added this as per request
 correct-guesses = 0
 print("You will try to guess the sum of three dice.")
+players = input("Enter the number of players:")
 #for loop for rounds
 rounds = int(input("Enter the number of rounds you want to play: ")) 
 for i in range(0, rounds):
