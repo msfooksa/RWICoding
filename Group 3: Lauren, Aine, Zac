@@ -1,24 +1,31 @@
 # Dice Game Level 1 
 from random import randint
+#Core game function
 def roll():
+	#global allows the variables inside of this function to act as global variables, making my job much easier
 	global die1
 	die1 = randint(1,6)
 	global die2
 	die2 = randint(1,6)
 	global die3
 	die3 = randint(1,6)
-
+#added this as per request
+correct-guesses = 0
 print("You will try to guess the sum of three dice.")
+#for loop for rounds
 rounds = int(input("Enter the number of rounds you want to play: ")) 
 for i in range(0, rounds):
 	roll()
 	num_sum = die1 + die2 + die3
 	guess = int(input("Enter your guess: "))
+	#checks answer
 	if guess == num_sum:
 		print("Congratulations, you guessed right")
+		correct-guesses = correct-guesses + 1
 	else:
 		print("Sorry, try again. The number was %s." %(num_sum))
-
+#edited in as per request
+print("The number of guesses you got correct was %s." %(correct-guesses))
 
 
 # michaela's feedback
