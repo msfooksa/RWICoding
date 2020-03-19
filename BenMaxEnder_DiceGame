@@ -1,3 +1,40 @@
+# Imports The rabdom module
+import random
+
+#Sets lists and variables
+w=int(input("How many players are playing this round?: "))
+a=int(input("How many rounds would you like to play?: "))
+Name={}
+points = {}
+
+#Sets the variables in the list
+for i in range(w):
+    Name[input("Enter your name:")] = input("Guess the sum of three randomly rolled dice:")
+
+
+#Creates the For loops
+for i in Name.keys():
+    points[i] = 0
+    for x in range (a):
+    
+#Sets dice values for the round
+        die1= random.randint (1,6)
+        die2= random.randint (1,6)
+        die3= random.randint (1,6)
+        final_number = die1 + die2 + die3
+        print("The sum of the dice is " + str(final_number))
+#Checks to see if you got it right
+        if int(Name[i]) == final_number:
+            points[i] += 1
+        else:
+            points[i] += 0
+  
+#Calculates the winner and prints it out
+winner = max(Name.items(),operator.itemgetter(1))[0]
+print("The winner is " + winner )
+print(points)
+
+=======
 #import random lets the program choose a random number 
 import random
 #this makes it where the numbers chose randomly are only between 1 and 6 
