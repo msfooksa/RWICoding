@@ -18,8 +18,20 @@ if number_players == "1":
             print("Nice Job!") # This is whats printed if they are right
         else: print("Sorry, the number was " + (str(ans))) # This prints when your wrong and tells you the right anwser 
     print("Game Over")
-
-
+        print(player_two)# Player twos name is printed
+    for (x) in range(int(number_games)):
+        number_guess = input("Guess a number between 1 and 18: ")
+        import random
+        die_one = random.randint (1,6) 
+        die_two = random.randint (1,6) # Same as above
+        die_three = random.randint (1,6)
+        ans = die_one + die_two + die_three
+        if (int(number_guess)) == ans: 
+            print("Nice Job!")
+            x[two_score] += 1
+        else: print("Sorry, the number was " + (str(ans)))
+    print("Game Over")
+    
 # michaela's feedback
 # 1. comment out the first two lines
 # 2. right now, you print the three dice rolls before asking the player for their guess - it is more of an addition test than trying to guess the sum of the dice. (try running your code to see what i mean)
