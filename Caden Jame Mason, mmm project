@@ -2,7 +2,7 @@ ay = 'ay'
 # Prepares ending for words that begin with vowels
 way = 'way'
 # defines consonants 
-consonant = ('B','C','D','F','G','H','J','K','L','M','N','P','Q','R','S','T','Y','V','X','Z')
+consonant = ('B','C','D','F','G','H','J','K','L','M','N','P','Q','R','S','T','Y','V','X','Z','W')
 # defines vowels
 vowel = ('A','E','I','O','U')
 pig_latin_string =''
