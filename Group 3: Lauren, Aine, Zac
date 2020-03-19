@@ -1,4 +1,5 @@
 # Dice Game Level 1 
+# imports a random integer 
 from random import randint
 #Core game function
 def roll():
@@ -10,7 +11,8 @@ def roll():
 	global die3
 	die3 = randint(1,6)
 #added this as per request
-correct-guesses = 0
+correct-guesses = 0 
+# explains the game to the user and asks for the number of players. 
 print("You will try to guess the sum of three dice.")
 players = input("Enter the number of players:")
 #for loop for rounds
