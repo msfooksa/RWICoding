@@ -1,13 +1,18 @@
+#import random lets the program choose a random number 
 import random
+#this makes it where the numbers chose randomly are only between 1 and 6 
 random.randint (1,6)
 
+#creates three different die and makes them only have a number between 1 and 6
 die1= random.randint (1,6)
 die2= random.randint (1,6)
 die3= random.randint (1,6)
+#makes final number the sum of all three die 
 final_number = die1 + die2 + die3
 
-
+#asks user for round count and input is the number used 
 a=int(input("How many rounds would you like to play?: "))
+#asks for players in the round and takes their names and guesses and repeats this process for how many rounds entered r
 for i in range (a):
     w=int(input("How many players are playing this round?: "))
     print("There are three die with the numbers 1-6 on each one. Pick a number between 1 and 18 and if you guess the same number as the sum of all three dice than you win.")
@@ -21,13 +26,18 @@ for i in range (a):
     die3= random.randint (1,6)
     final_number = die1 + die2 + die3
     print(names_and_guesses)
+#prints the dice roll amount
     print("The sum of the dice is " + str(final_number))
+#creates if statememt telling each user if they are right or wrong 
     if final_number in names_and_guesses.values():
         for i in names_and_guesses.keys():
             if final_number == names_and_guesses[i]:
                 print("You guessed correct! Those are some slim odds Bucko!")
             else:
                 print("You guessed wrong. Better luck next time.")
+#if all users are wrong it prints this
+    if final_number != names_and_guesses.values():
+        print("You are all wrong!!")
                 
 # michaela's feedback:
 # 1. please comment your code in the format we've discussed in class
