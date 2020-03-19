@@ -9,14 +9,14 @@ points = {}
 
 #Sets the variables in the list
 for i in range(w):
-    Name[input("Enter your name:")] = input("Guess the sum of three randomly rolled dice:")
+    Name[input("Enter your name:")] = 0
 
 
 #Creates the For loops
 for i in Name.keys():
     points[i] = 0
     for x in range (a):
-    
+        Name[i] = input("Guess the sum of three randomly rolled dice:")
 #Sets dice values for the round
         die1= random.randint (1,6)
         die2= random.randint (1,6)
@@ -30,7 +30,7 @@ for i in Name.keys():
             points[i] += 0
   
 #Calculates the winner and prints it out
-winner = max(Name.items(),operator.itemgetter(1))[0]
+winner = max(Name.items())
 print("The winner is " + winner )
 print(points)
 
