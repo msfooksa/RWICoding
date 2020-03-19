@@ -3,7 +3,7 @@ print("In this fun to play game you'll try to guess the sum of three randomly ro
 
 # This is where the user imputs how many players there's going to be
 number_players = input("How many players(1-2): ")
-#
+
 # When one player is selected, this is where they are directed
 if number_players == "1":
     number_games = input("How many games would you like to play?: ")# The user is asked the number of games they want to play
