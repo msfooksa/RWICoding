@@ -18,6 +18,28 @@ if number_players == "1":
             print("Nice Job!") # This is whats printed if they are right
         else: print("Sorry, the number was " + (str(ans))) # This prints when your wrong and tells you the right anwser 
     print("Game Over")
+# When two players is selected, this is where they are directed
+if number_players == "2":
+    one_score = 0
+    two_score = 0
+    x = {one_score: 0, two_score: 0}
+    player_one = input("Player One Name: ")# This is where the user puts in the name for player one and two
+    player_two = input("Player Two Name: ")
+    number_games = input("How many games would you like to play?: ")# This is where the number of games they want is inputted
+    print(player_one)# Prints player one name
+    for (x) in range(int(number_games)):
+        number_guess = input("Guess a number between 1 and 18: ")# User guess imput for player one
+        import random
+        die_one = random.randint (1,6) #same as one player
+        die_two = random.randint (1,6)
+        die_three = random.randint (1,6)
+        ans = die_one + die_two + die_three
+        if (int(number_guess)) == ans:
+            x[one_score] +=1
+            print("Nice Job!")
+        else: print("Sorry, the number was " + (str(ans)))
+    print("Game Over")    
+    print(player_two)# Player twos name is printed
 
 
 # michaela's feedback
