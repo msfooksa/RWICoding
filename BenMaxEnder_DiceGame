@@ -32,11 +32,11 @@ for i in Name.keys():
 #Calculates the winner and prints it out
 winner = max(Name.items())
 
-print("The winner is " + winner )
-
 print("The winner is " + str(winner))
-
 print(points)
+
+
+
 
 #import random lets the program choose a random number 
 import random
