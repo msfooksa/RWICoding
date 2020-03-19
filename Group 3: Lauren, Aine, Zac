@@ -1,4 +1,5 @@
 # Dice Game Level 1 
+# imports random integer
 from random import randint
 #Core game function
 def roll():
@@ -13,7 +14,8 @@ def roll():
 correct_guesses_1 = 0
 correct_guesses_2 = 0
 correct_guesses_3 = 0
-correct_guesses_4 = 0
+correct_guesses_4 = 0 
+# explains the game to the user
 print("You will try to guess the sum of three dice.")
 while True:
         players = int(input("Enter the amount of people playing. Minimum of one, maximum of four."))
@@ -43,5 +45,5 @@ for j in range(0, rounds):
 			correct_guesses_4 = correct_guesses_4 + 1
 		else:
 			print("Sorry, try again. The number was %s." %(num_sum))
-#edited in as per request
+# prints out the points that each player received (edited in as per request)
 print("Player 1 got %s points, player 2 got %s points, player 3 got %s points, and player 4 got %s points" %(correct_guesses_1, correct_guesses_2, correct_guesses_3, correct_guesses_4))
