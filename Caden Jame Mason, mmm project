@@ -6,7 +6,10 @@ consonant = ('B','C','D','F','G','H','J','K','L','M','N','P','Q','R','S','T','Y'
 # defines vowels
 vowel = ('A','E','I','O','U')
 pig_latin_string =''
-user_sentence = input('Enter a sentence to translate to Pig Latin: ')
+while Errorcheck = False:
+    user_sentence = input('Enter a sentence to translate to Pig Latin: ')
+    if isalpha(user_sentence):
+        Errorcheck = True
 words = user_sentence.split()
 
 for user_word in words:
@@ -25,9 +28,9 @@ for user_word in words:
         pig_latin=user_word+way
         pig_latin_string=pig_latin_string+' '+pig_latin
     else:
-        print('Looks like your first letter is not a Letter, This translater only accepts alphabetical Characters')
+        print('Looks like your first letter is not a Letter, This translator only accepts alphabetical Characters')
 
-print("Your Senternce In Pig Latin Is:" + pig_latin_string)
+print("Your Sentence In Pig Latin Is:" + pig_latin_string)
 
 # michaela's feedback
 # 1. please consistently comment your code
