@@ -29,6 +29,6 @@ print("The number of guesses you got correct was %s." %(correct-guesses))
 
 
 # michaela's feedback
-# 1. comment your code in the format we've discussed in class
-# 2. the final output should be how many times the person guessed correctly
+# 1. comment your code in the format we've discussed in class (Done)
+# 2. the final output should be how many times the person guessed correctly (Done)
 # 3. the next step is to make it multiplayer!
