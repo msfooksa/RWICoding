@@ -1,9 +1,20 @@
-Names: Jackson, Jack, Grady, Luke
-dice game
-#imports random
-from random import randint
-#gives instructions on how to play the game
-print('In this game, you will guess the sum of three die, Good Luck!\n')
-#default values for roll
-roll = [0,0,0]
-#Comment
+print("Welcome to the DICE ZONE!")
+print("In this fun to play game you'll try to guess the sum of three randomly rolled dice!")
+
+# This is where the user imputs how many players there's going to be
+number_players = input("How many players(1-2): ")
+
+# When one player is selected, this is where they are directed
+if number_players == "1":
+    number_games = input("How many games would you like to play?: ")# The user is asked the number of games they want to play
+    for (x) in range(int(number_games)):
+        import random # Imports from random moduel
+        number_guess = input("Guess a number between 1 and 18: ")# Where the user imputs the number they guess
+        die_one = random.randint (1,6) # Gives random number for dice one
+        die_two = random.randint (1,6) # Gives random number for dice two
+        die_three = random.randint (1,6) # Gives random number for dice three
+        ans = die_one + die_two + die_three # This adds all of the dice values together and names is ans
+        if (int(number_guess)) == ans: # This checks to see is the guess was right
+            print("Nice Job!") # This is whats printed if they are right
+        else: print("Sorry, the number was " + (str(ans))) # This prints when your wrong and tells you the right anwser 
+    print("Game Over")
