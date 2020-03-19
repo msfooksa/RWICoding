@@ -30,8 +30,8 @@ for i in Name.keys():
             points[i] += 0
   
 #Calculates the winner and prints it out
-winner = max(Name.items(),operator.itemgetter(1))[0]
-print("The winner is " + winner )
+winner = max(Name.items())
+print("The winner is " + str(winner))
 print(points)
 
 =======
